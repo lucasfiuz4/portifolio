@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucas Fiuza AK7 Dev | Portfólio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <span class="logo-text">&lt;LF/&gt;</span>
+            </div>
+            
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <nav class="navigation">
+                <ul class="menu">
+                    <li><a href="#home" class="active">Início</a></li>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#skills">Habilidades</a></li>
+                    <li><a href="#projects">Projetos</a></li>
+                    <li><a href="#experience">Experiência</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="typing-effect">Desenvolvedor Full Stack apaixonado por resoluções de problemas</h1>
+                    <h2 class="hero-name">Lucas Fiuza</h2>
+                    <p class="hero-description">
+                        Crio soluções digitais com foco em performance, design moderno e usabilidade. 
+                        Seja no front ou back-end, minha missão é entregar valor real com código limpo e eficiente.
+                    </p>
+                    
+                    <div class="hero-buttons">
+                        <button class="btn primary" onclick="document.getElementById('projects').scrollIntoView({behavior: 'smooth'})">
+                            Ver Projetos
+                        </button>
+                        <button class="btn secondary" onclick="window.open('curriculo.pdf')">
+                            Baixar Currículo
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="hero-image">
+                    <div class="image-container">
+                        <img src="https://images.pexels.com/photos/4709285/pexels-photo-4709285.jpeg" alt="Desenvolvedor trabalhando">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="scroll-indicator">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="section-container">
+                <h2 class="section-title">Sobre Mim</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>
+                            Sou desenvolvedor com foco em soluções full stack. Tenho experiência 
+                            em projetos web e APIs, com domínio de ferramentas modernas. 
+                            Busco sempre me atualizar para entregar o melhor resultado em cada projeto.
+                        </p>
+                        <div class="code-block">
+                            <pre>
+                                <code>
+const developer = {
+    name: 'Lucas Fiuza',
+    skills: ['Front-End', 'Back-End', 'DevOps'],
+    passion: 'Solving problems with code'
+}
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills">
+            <div class="section-container">
+                <h2 class="section-title">Habilidades</h2>
+                <div class="skills-container">
+                    <div class="hard-skills">
+                        <h3>Hard Skills</h3>
+                        <div class="skills-grid">
+                            <div class="skill-card">
+                                <div class="skill-header">
+                                    <span class="skill-icon frontend">🌐</span>
+                                    <h4>Front-End</h4>
+                                </div>
+                                <div class="skill-list">
+                                    <span class="skill-tag">HTML</span>
+                                    <span class="skill-tag">CSS</span>
+                                    <span class="skill-tag">JavaScript</span>
+                                </div>
+                            </div>
+                            <div class="skill-card">
+                                <div class="skill-header">
+                                    <span class="skill-icon backend">⚙️</span>
+                                    <h4>Back-End</h4>
+                                </div>
+                                <div class="skill-list">
+                                    <span class="skill-tag">Node.js</span>
+                                    <span class="skill-tag">Python</span>
+                                    <span class="skill-tag">PHP</span>
+                                </div>
+                            </div>
+                            <div class="skill-card">
+                                <div class="skill-header">
+                                    <span class="skill-icon database">🗄️</span>
+                                    <h4>Banco de Dados</h4>
+                                </div>
+                                <div class="skill-list">
+                                    <span class="skill-tag">MySQL</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="soft-skills">
+                        <h3>Soft Skills</h3>
+                        <div class="soft-skills-list">
+                            <div class="soft-skill-item">
+                                <span>Comunicação</span>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 100%"></div>
+                                </div>
+                            </div>
+                            <div class="soft-skill-item">
+                                <span>Trabalho em equipe</span>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 75%"></div>
+                                </div>
+                            </div>
+                            <div class="soft-skill-item">
+                                <span>Proatividade</span>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 50%"></div>
+                                </div>
+                            </div>
+                            <div class="soft-skill-item">
+                                <span>Adaptabilidade</span>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 25%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+            <div class="section-container">
+                <h2 class="section-title">Meus Projetos</h2>
+                <div class="projects-wrapper">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg" alt="Landing Page">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link">Código</a>
+                                    <a href="#" class="project-link">Demo</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Landing Page</h3>
+                            <p class="project-description">Projeto de página de vendas com design moderno, responsivo e otimizado para SEO e conversão.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">HTML</span>
+                                <span class="project-tag">CSS</span>
+                                <span class="project-tag">JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg" alt="Sistema de Autenticação">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link">Código</a>
+                                    <a href="#" class="project-link">Demo</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Sistema de Autenticação</h3>
+                            <p class="project-description">Backend com Node.js e autenticação JWT. Projeto focado em segurança e performance.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">Node.js</span>
+                                <span class="project-tag">JWT</span>
+                                <span class="project-tag">Express</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://images.pexels.com/photos/7014337/pexels-photo-7014337.jpeg" alt="Dashboard Administrativo">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link">Código</a>
+                                    <a href="#" class="project-link">Demo</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Dashboard Administrativo</h3>
+                            <p class="project-description">Interface para visualização de dados com gráficos, filtros dinâmicos e exportação de relatórios.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">React</span>
+                                <span class="project-tag">Chart.js</span>
+                                <span class="project-tag">CSS</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="experience">
+            <div class="section-container">
+                <h2 class="section-title">Empresas Parceiras</h2>
+                <div class="experience-timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="company-logo">
+                                <img src="https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg" alt="Empresa X">
+                            </div>
+                            <h3 class="company-name">Empresa X</h3>
+                            <p class="company-description">Desenvolvimento de landing pages e sistemas de e-commerce.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="company-logo">
+                                <img src="https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg" alt="Agência Y">
+                            </div>
+                            <h3 class="company-name">Agência Y</h3>
+                            <p class="company-description">Criação de APIs e integração com sistemas de terceiros.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="company-logo">
+                                <img src="https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg" alt="Projeto Z">
+                            </div>
+                            <h3 class="company-name">Projeto Z</h3>
+                            <p class="company-description">Implementação de dashboards administrativos e relatórios.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="section-container">
+                <h2 class="section-title">Contato</h2>
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <h3>Vamos Conversar</h3>
+                        <p>Estou disponível para novos projetos e oportunidades. Entre em contato!</p>
+                        <div class="social-links">
+                            <a href="mailto:email@example.com" class="social-link">
+                                <span>📧</span>
+                                <span>email@example.com</span>
+                            </a>
+                            <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="social-link">
+                                <span>🐱</span>
+                                <span>github.com/usuario</span>
+                            </a>
+                            <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" class="social-link">
+                                <span>💼</span>
+                                <span>linkedin.com/in/usuario</span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form">
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <input type="text" name="nome" placeholder="Nome" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea name="mensagem" placeholder="Digite sua mensagem" required></textarea>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn primary">Enviar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-text">&lt;LF/&gt;</span>
+                </div>
+                <p class="copyright">
+                    &copy; <span id="currentYear"></span> Lucas Fiuza. Todos os direitos reservados.
+                </p>
+                <p class="footer-tagline">
+                    <span class="code-comment">// Construído com ❤️ e muito ☕</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
